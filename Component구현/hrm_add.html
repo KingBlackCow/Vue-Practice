@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+      tr > td:first-child {
+        background-color: cornflowerblue;
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <hrm-add></hrm-add>
+    </div>
+    <script type="module">
+      import HrmAdd from "./components/HrmAdd.js";
+      new Vue({
+        el: "#app",
+        components: {
+          HrmAdd,
+        },
+      });
+    </script>
+  </body>
+</html>
